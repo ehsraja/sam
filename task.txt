@@ -1,0 +1,43 @@
+1) What's done 
+POC 
+Set up Momngo DB database
+   Convert from berkely xml to json and store it into Mongo reporsitory 
+   Able to load it through MongomapStore
+   Publish it over HZ and able to add HZ listern 
+   Able to collect statstics 
+
+
+
+Limitation POC
+ Can not be productionized 
+
+What needs to done 
+  Sperating POC in two services 
+    Batch service - which loads data from Bedrlely and store it into Mongo
+  
+  Convert it into CreditDataStore 
+   a) Refactoring\re-packaging ,
+   b) Adding Spring boot support  
+   c) A web-API 
+   
+   c) Redesign Curve object used in POC to a Single\two curve Object | main curve 2nd curvePointCollection 
+   d) Using alternate ways of Marshing\Unmarhing in POC then JAXB, try jackson
+
+  Hazelcast 
+   a) Using TCP 
+   
+   MapStore
+   e) Creating a genric design, checking if Sonny's data-serrvice api can be used or existing can be made genric 
+   f) Checking if JPA map store can be used    
+
+   Deploy and test 
+   g) Adding mavendeploy plyugin and deploy it in IST 
+      
+
+Testing 
+  Junit test cases to modify 
+  Test it with other services 
+   
+
+ 
+   
